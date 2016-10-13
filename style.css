@@ -1,0 +1,52 @@
+body {
+  background-color: #beige;
+}
+
+h1 {
+  background: 	skyblue;
+  color: whitesmoke;
+  padding: 5px;
+  text-align: center;
+}
+
+h2 {
+  background: skyblue;
+  color: whitesmoke;
+  padding: 5px;
+  text-align: center;
+}
+
+label {
+  position:relative;
+  width:500px;
+}
+
+input {
+ width:100px;
+ position:absolute;
+ left: 250px;
+}
+
+p {
+  font-size: 1.3em;
+    margin-left: 20px;
+}
+
+button {
+  background-color: #6dafca;
+  font-size: 16px;
+  padding: 12px 28px;
+  border-radius: 5px;
+  width: 250px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+button:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24);
+}
+
+#btn2 {
+  margin-left: 20px;
+}
