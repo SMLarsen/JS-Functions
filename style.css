@@ -3,14 +3,14 @@ body {
 }
 
 h1 {
-  background: 	skyblue;
+  background: 	#48bf78;
   color: whitesmoke;
   padding: 5px;
   text-align: center;
 }
 
 h2 {
-  background: skyblue;
+  background: #48bf78;
   color: whitesmoke;
   padding: 5px;
   text-align: center;
@@ -34,7 +34,7 @@ p {
 }
 
 button {
-  background-color: #6dafca;
+  background-color: #33a05f;
   font-size: 16px;
   padding: 12px 28px;
   border-radius: 5px;
