@@ -141,4 +141,19 @@ function f14(num, coins) {
   }
   document.getElementById("s14").innerHTML = array;
 }
-f14(399, [100, 50, 25, 10, 5, 2, 1]);
+//f14(399, [100, 50, 25, 10, 5, 2, 1]);
+
+function f24() {
+  var array = document.getElementById('i24').value.split(", ");
+  var hold = "";
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 0; j < array.length - 1; j++) {
+      if (Number(array[j]) < Number(array[j + 1])) {
+        hold = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = hold;
+      }
+    }
+  }
+  document.getElementById("s24").innerHTML = array;
+}
