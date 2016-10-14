@@ -20,3 +20,20 @@ function f2() {
   }
   document.getElementById("s2").innerHTML = p === true ? "is" : "is not";
 }
+
+function f3() {
+  var i3 = document.getElementById('i3').value.split("");
+  var array = [];
+  var combo = "";
+  for (var i = 0; i < i3.length; i++) {
+    combo = i3[i];
+    array.push(combo);
+    console.log(array);
+    for (var j = i + 1; j < i3.length; j++) {
+      combo += i3[j];
+      array.push(combo);
+      console.log(array);
+    }
+  }
+  document.getElementById("s3").innerHTML = array;
+}
