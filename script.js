@@ -97,3 +97,20 @@ function f11() {
   }
   document.getElementById("s11").innerHTML = msg;
 }
+
+function f12() {
+  var num = Number(document.getElementById('i12').value);
+  var sum = 0;
+  var msg = "";
+  if (num <= 1) {
+    msg = "invalid input - enter at positive number of at least 2";
+  } else {
+    for (var i = 1; i <= num / 2; i++) {
+      if (num % i === 0) {
+        sum += i;
+      }
+    }
+    msg = sum === num ? true : false ;
+  }
+  document.getElementById("s12").innerHTML = msg;
+}
