@@ -82,3 +82,18 @@ function f8() {
     }
   document.getElementById("s8").innerHTML = prime;
 }
+
+function f9() {
+  document.getElementById("s9").innerHTML = typeof document.getElementById('i9').value;
+}
+
+function f11() {
+  var array = document.getElementById('i11').value.split(",").sort(function(a, b){return a-b});
+  var msg = "";
+  if (array.length <= 2) {
+    msg = "invalid input - enter at least three digits";
+  } else {
+    msg = "high = " + array[1] + ", low = " + array[array.length - 2];
+  }
+  document.getElementById("s11").innerHTML = msg;
+}
