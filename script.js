@@ -63,3 +63,22 @@ function f7() {
   var string = document.getElementById('i7').value;
   document.getElementById("s7").innerHTML = string.match(/[aeiou]/gi).length;
 }
+
+function f8() {
+  var n = document.getElementById('i8').value;
+  var prime = true;
+  if (n === 1) {
+    prime = true;
+  } else
+    if (n % 2 === 0) {
+      prime = false;
+    } else {
+      for (var i = 3; i < n /2; i += 2) {
+        if (n % i === 0) {
+          prime = false;
+          break;
+        }
+      }
+    }
+  document.getElementById("s8").innerHTML = prime;
+}
