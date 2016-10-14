@@ -45,3 +45,16 @@ function f5() {
   var string = document.getElementById('i5').value;
   document.getElementById("s5").innerHTML =   string.replace(/\b[a-z]/g,function(f){return f.toUpperCase();});
 }
+
+function f6() {
+  var array = document.getElementById('i6').value.split(" ");
+  var max = 0;
+  var maxI = 0;
+  for (var i = 1; i < array.length; i++) {
+    if (array[i].length > max) {
+      max = array[i].length;
+      maxI = i;
+    }
+  }
+  document.getElementById("s6").innerHTML =   array[maxI];
+}
