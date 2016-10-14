@@ -28,11 +28,9 @@ function f3() {
   for (var i = 0; i < i3.length; i++) {
     combo = i3[i];
     array.push(combo);
-    console.log(array);
     for (var j = i + 1; j < i3.length; j++) {
       combo += i3[j];
       array.push(combo);
-      console.log(array);
     }
   }
   document.getElementById("s3").innerHTML = array;
@@ -41,4 +39,9 @@ function f3() {
 function f4() {
   var string = document.getElementById('i4').value.split("");
   document.getElementById("s4").innerHTML =   string.sort().join("");
+}
+
+function f5() {
+  var string = document.getElementById('i5').value;
+  document.getElementById("s5").innerHTML =   string.replace(/\b[a-z]/g,function(f){return f.toUpperCase();});
 }
