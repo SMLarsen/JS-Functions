@@ -37,3 +37,8 @@ function f3() {
   }
   document.getElementById("s3").innerHTML = array;
 }
+
+function f4() {
+  var string = document.getElementById('i4').value.split("");
+  document.getElementById("s4").innerHTML =   string.sort().join("");
+}
