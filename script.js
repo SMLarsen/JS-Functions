@@ -58,3 +58,8 @@ function f6() {
   }
   document.getElementById("s6").innerHTML =   array[maxI];
 }
+
+function f7() {
+  var string = document.getElementById('i7').value;
+  document.getElementById("s7").innerHTML = string.match(/[aeiou]/gi).length;
+}

@@ -75,10 +75,9 @@ button:hover {
 }
 
 a.answer {
-  color: red;
+  color: #2196f3;
   font-family: sans-serif;
   font-size: .8em;
   position:absolute;
   left: 36%;
-  padding: 7px;
 }
