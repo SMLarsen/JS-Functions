@@ -81,4 +81,5 @@ a.answer {
   font-size: .8em;
   position:absolute;
   left: 36%;
+  word-wrap: break-word;
 }

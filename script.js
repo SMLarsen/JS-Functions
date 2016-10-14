@@ -114,3 +114,31 @@ function f12() {
   }
   document.getElementById("s12").innerHTML = msg;
 }
+
+function f13() {
+  var num = Number(document.getElementById('i13').value);
+  var array = [];
+  if (num <= 1) {
+    document.getElementById("s13").innerHTML = "invalid input - enter at positive number of at least 1";
+  } else {
+    for (var i = 1; i <= num / 2; i++) {
+      if (num % i === 0) {
+        array.push(i);
+      }
+    }
+    array.push(num);
+    document.getElementById("s13").innerHTML = array;
+  }
+}
+
+function f14(num, coins) {
+  var array = [];
+  for (var i = 0; i <= coins.length; i++) {
+    while (coins[i] <= num) {
+      array.push(coins[i]);
+      num -= coins[i];
+    }
+  }
+  document.getElementById("s14").innerHTML = array;
+}
+f14(399, [100, 50, 25, 10, 5, 2, 1]);
